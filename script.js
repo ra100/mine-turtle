@@ -4,7 +4,7 @@ const turtleImage = document.getElementById('turtle-image')
 
 let pressCount = 0
 let exploded = false
-const maxPresses = 100
+let maxPresses // maxPresses will be initialized on game reset
 
 function checkExplosion() {
   const explosionChance = pressCount / maxPresses
@@ -24,6 +24,7 @@ function checkExplosion() {
 function resetGame() {
   pressCount = 0
   exploded = false
+  maxPresses = Math.floor(Math.random() * (200 - 50 + 1)) + 50 // Random value between 50 and 200
   turtleImage.src = 'turtle.png'
   statusDisplay.textContent = "Don't let it explode!"
   pressButton.disabled = false

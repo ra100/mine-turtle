@@ -24,17 +24,17 @@ body {
   height: auto;
 }
 
-#press-button {
-  padding: 10px 20px;
-  background-color: #4caf50;
-  color: white;
-  border: none;
+#explode-button {
+  background-color: #ce2d2d;
   border-radius: 5px;
+  border: none;
+  color: white;
   cursor: pointer;
   font-size: 16px;
+  padding: 10px 20px;
 }
 
-#press-button:hover {
+#explode-button:hover {
   background-color: #367c39;
 }
 
@@ -43,13 +43,13 @@ body {
   font-size: 18px;
 }
 
-#press-button:active {
+#explode-button:active {
   background-color: #367c39; /* Darker green on press */
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Smaller shadow on press */
   transform: translateY(1px); /* Slightly move down on press */
 }
 
-#press-button.pressed {
+#explode-button.pressed {
   background-color: #367c39; /* Darker green on press */
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Smaller shadow on press */
   transform: translateY(1px); /* Slightly move down on press */
