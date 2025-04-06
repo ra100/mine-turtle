@@ -4,7 +4,7 @@ const turtleImage = document.getElementById('turtle-image')
 
 let pressCount = 0
 let exploded = false
-const maxPresses = 50
+const maxPresses = 100
 
 function checkExplosion() {
   const explosionChance = pressCount / maxPresses
@@ -39,3 +39,5 @@ pressButton.addEventListener('click', () => {
     }, 500)
   }
 })
+
+resetGame()
